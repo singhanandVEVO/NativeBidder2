@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Insert Template</title>
+
+<body>
+    <h1>++Template Manager++</h1>
+    </br>
+    <form name="templateManager" method="POST" action="/addTemplate">
+        <br>PUBLISHER NAME<br>
+        <select name="hostname" required>
+            <option value="stackoverflow.com">STACK OVERFLOW</option>
+            <option value="facebook.com">FACEBOOK</option>
+            <option value="forbes.com">FORBES GLOBAL</option>
+            <option value="forbes.in">FORBES INDIA</option>
+            <option value="airtel.com">AIRTEL</option>
+          </select>
+        </br>
+        <br>TEMPLATE FOR<br>
+        <select name="templateFor" required>
+            <option value="native">native</option>
+            <option value="display">display</option>
+            <option value="banner">banner</option>
+          </select>
+        </br>
+        <br>TEMPLATE HTML<br>
+        <input type="text" name="templateHtml" required>
+
+        </br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Campaigns</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .bg-1 { 
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+        }
+        </style>
+</head>
+
+<body>
+  <div class="container bg-1 text-center">
+    <h1>++Campaign Manager++</h1>
+    </br>
+    <form name="campaignManager" method="POST" action="/addCampaign">
+
+        <br>CUSTOMER ID<br>
+        <input type='number' name='custId' required>
+        </br>
+        <br>AD UNIT<br>
+        <select name="adUnit" required>
+            <option value="native">native</option>
+            <option value="display">display</option>
+            <option value="banner">banner</option>
+          </select>
+        </br>
+        <br>BID IN DOLLARS<br>
+        <br>min<br>
+
+        <input type="number" name="minBid" required>
+        </br>
+        <br>max<br>
+
+        <input type="number" name="maxBid" required>
+        </br>
+
+        <br>BUDGET IN DOLLARS<br>
+        <input type="number" name="budget">
+        </br>
+        <br>SLOT DIMENSIONS<br>
+        <select name="slotDim" required>
+            <option value="600x400">600x400</option>
+            <option value="600x300">600x300</option>
+            <option value="300x300">300x300</option>
+          </select>
+        </br>
+        <br>TARGET DEVICE<br>
+        <select name="targetDevice">
+            <option value="desktop">desktop</option>
+            <option value="mobile">mobile</option>
+          </select>
+        </br>
+        <br>TARGET PLATFORM<br>
+        <select name="targetPlatform">
+            <option value="Win32">Win32</option>
+            <option value="Win64">Win64</option>
+            <option value="Ubuntu">Ubuntu</option>
+          </select>
+        </br>
+        <br>TARGET BROWSER<br>
+        <select name="targetBrowser">
+            <option value="Netscape">Netscape</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+          </select>
+        </br>
+        <br>TARGET COUNTRY<br>
+        <input type="text" name="targetCountryCode">
+        </br>
+        <br><br>
+        <h1>++Assets++</h1>
+        <br>
+        <br>AD TITLE<br>
+        <input type="text" name="adTitle" required>
+        </br>
+        <br>AD DESCRIPTION<br>
+        <input type="text" name="adDesc" required>
+        </br>
+        <br>REDIRECT URL<br>
+        <input type="text" name="redirectURL" required>
+        </br>
+        <br>IMAGE URL<br>
+        <input type="text" name="imageUrl" required>
+        </br>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+</body>
+
+</html>
